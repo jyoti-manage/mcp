@@ -1,0 +1,3 @@
+1. First see the stateful method and then see for the stateless method.
+2. The difference between the two methods is that the session ID needed is for stateful communication for maintaining a long-live connection, but no session ID is needed for the stateless method of communication. Because for example, just for a sum_tool, we do not need the client to have a long live connection with the server, so we do not need to initialize a session and send a follow-up request with the notification.
+3.  While in the python coding part, the client code remains the same for both stateless and stateful. In stateless transport, it will simple ignore the session id.

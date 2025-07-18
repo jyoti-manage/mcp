@@ -36,7 +36,7 @@ class MCPClient:
     async def process_query(self, query: str) -> str:
         """Process a query using Claude and available tools"""
        
-        # response = await self.session.list_tools()
+        response = await self.session.list_tools()
         # available_tools = [{
         #     "name": tool.name,
         #     "description": tool.description,
