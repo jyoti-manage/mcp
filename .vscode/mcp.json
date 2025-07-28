@@ -1,0 +1,9 @@
+{
+    "servers": {
+        "my-mcp-server": {
+            "url": "http://20.155.90.158:8000/mcp/"
+        }
+    }
+}
+
+// For this, the host would be GITHUB COPILOT AGENT

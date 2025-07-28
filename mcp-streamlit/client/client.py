@@ -11,6 +11,10 @@ from get_proxy_client import proxy_client
 
 load_dotenv()
 
+# Host can be any LLM or agents in most cases. In most cases, the clients are not needed to be implemented like this. 
+# So, the clients are not implemented directly, instead the client's part or the connection, session etc. are implemented by most of the agent frameworks like langgraph, which is then just abstracted from us, so that we can simply use that instead of creating a client from scratch.
+# For example, like a lot of sdk like Gemini are doing like they are connecting with mcp servers and getting the tools lists and giving then to agents (this is same as what we have done in this client.py, but this will be abstracted in their SDK) 
+
 class MCPClient:
     def init_(self):
         # Initialize session and client objects

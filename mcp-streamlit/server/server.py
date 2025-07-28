@@ -7,6 +7,7 @@ from pathlib import Path
 base_dir = Path(__file__).parent
 
 mcp = FastMCP("LeaveManager")
+# the default timeout is 60 seconds...
 
 
 # def read_doc(data):
@@ -14,9 +15,10 @@ mcp = FastMCP("LeaveManager")
 #         json.dump(data,f,indent=2)
 
 
-def read_doc(data):
+def read_doc():
     with open(base_dir / "json_data" / "data.json", "w") as f:   # This makes the file access robust no matter where the server is run from. 
-        json.dump(data, f, indent=2)
+        data = json.load(f)
+        return data
    
 
 #Tool: Check Leave Balance
