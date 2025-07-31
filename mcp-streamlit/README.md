@@ -36,6 +36,11 @@
 
     uv run main.py
     ```
+
+    ```
+    uv pip install -e .
+    ```
+    
 - This workflow creates a project, adds dependencies, and ensures they are locked and available for all collaborators (in pyproject.toml file).
 
 

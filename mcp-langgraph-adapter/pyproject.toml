@@ -1,0 +1,31 @@
+[project]
+name = "mcp-langgraph-adapter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.2.2",
+    "httpx>=0.28.1",
+    "langchain>=0.3.25",
+    "langchain-groq>=0.3.6",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.4.3",
+    "mcp-server-git>=2025.1.14",
+    "mcp[cli]>=1.8.0",
+    "pandas>=2.2.3",
+    "pydantic>=2.11.4",
+    "python-dotenv>=1.1.0",
+    "uv>=0.7.3",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv.workspace]
+members = [
+    "demo-projects/hazra",
+    "demo-projects/opensi",
+]

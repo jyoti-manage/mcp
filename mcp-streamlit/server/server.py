@@ -21,6 +21,8 @@ def read_doc():
         return data
    
 
+# @tool decorator takes the function and create a tool defination around it, name of the function becomes the name of the tool, the docstring becomes the description of the tool and the function signature becomes the input parameters of the tool. And this creates a MCP tool
+# if we compare this mcp tool with langchain tool, then the tool defination syntax may be just different.
 #Tool: Check Leave Balance
 @mcp.tool()
 def get_leave_balance(employee_id: str) -> str:
